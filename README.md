@@ -12,11 +12,9 @@
 
 ### AI Agents, by the numbers
 
-<img src="https://img.shields.io/badge/Tokens-48.6B-1a2980?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/API_Value-%2431.8K-26d0ce?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Sessions-6,567-7b61ff?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Tokens-97.9B-1a2980?style=for-the-badge&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Skills-36-f97316?style=for-the-badge&labelColor=0d1117" />
-<sub>Jul~Sep 2026 · Claude Code + Codex · billed as subscriptions, valued at public API rates</sub>
+<sub>Jul~Sep 2026 · Claude Code + Codex · tokens processed, counted from local session logs</sub>
 
 <br /><br />
 
@@ -77,6 +75,7 @@ requirements → plan → build → review → fix
 | | |
 |:--|:--|
 | **[dooray-cli](https://github.com/jon890/dooray-cli)** | 사내 업무 도구를 에이전트가 다루도록 감싼 CLI |
+| **[fos-assistant](https://github.com/jon890/fos-assistant)** | Hermes Agent 위에 올린 self-hosted Control Plane. 다중 사용자 대화, 에이전트별 Memory 권한, 사용량 집계 |
 | **[nhncloud-cli](https://github.com/jon890/nhncloud-cli)** | 인스턴스, 클러스터 업그레이드, 로그 조회 자동화 |
 
 </div>
