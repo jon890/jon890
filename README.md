@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a2980,100:26d0ce&height=200&section=header&text=Byungtae%20Kim&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Backend%20Engineer%20%C2%B7%20AI-Native%20Workflow&descAlignY=56&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a2980,100:26d0ce&height=200&section=header&text=Byungtae%20Kim&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Agent%20%26%20Backend%20Engineer&descAlignY=56&descSize=18" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=26D0CE&center=true&vCenter=true&width=560&lines=8y+backend+%C2%B7+Java+%7C+Spring+%7C+Kubernetes;Document+Parsing+%C2%B7+RAG+Indexing+%C2%B7+OCR+Ops;I+delegate+the+small%2C+I+verify+the+rest." alt="typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=26D0CE&center=true&vCenter=true&width=560&lines=8y+backend+%C2%B7+Java+%7C+Spring+%7C+Python;Agent+design+%C2%B7+Evaluation+%C2%B7+Tracing;Document+Parsing+%C2%B7+RAG+Indexing+%C2%B7+OCR+Ops" alt="typing" />
 
 </div>
 
@@ -12,7 +12,7 @@
 
 ### AI Agents, by the numbers
 
-<img src="https://img.shields.io/badge/Tokens-97.9B-1a2980?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Tokens-97.8B-1a2980?style=for-the-badge&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Skills-36-f97316?style=for-the-badge&labelColor=0d1117" />
 <sub>Jul~Sep 2026 · Claude Code + Codex · tokens processed, counted from local session logs</sub>
 
@@ -31,26 +31,33 @@
 #### 🔁 How I work with agents
 
 ```
-requirements → plan → build → review → fix
-     ↑                              ↓
-     └──────── verified ────────────┘
+me ─ planning ─→ plans (1 plan = 1 PR)
+                   │
+            orch (coordinator)
+   ┌───────────────┼───────────────┐
+ worker          worker          worker
+ (worktree)      (worktree)      (worktree)
+ critic → build → review → PR
+   └───────────────┼───────────────┘
+          verify → merge → cleanup
 ```
 
-**각 단계를 재사용 가능한 Skill 로 분리했습니다.**
-요구사항과 설계, 계획과 검토는 직접 맡고
-구현은 에이전트가 수행합니다.
+**설계는 직접 합의하고, 실행은 여러 에이전트에 나눠 맡깁니다.**
+작업을 PR 단위 계획으로 쪼개 Orca 로 worker 를 워크트리마다 띄우고,
+worker 가 계획 검토부터 리뷰까지 거쳐 낸 PR 을 코디네이터가 검증해 머지합니다.
 
 </td>
 <td width="50%" valign="top">
 
-#### ✅ What I check before merging
+#### ✅ How I know it works
 
-`회귀` 바꾸기 전 출력과 문자 단위 대조
-`정답지` 원문과 변환 결과의 표 항목 비교
-`LLM 평가` 병합 셀과 읽기 순서 보존 판정
+`반복 평가` 같은 입력을 3번 돌려 3번 모두 통과해야 합격
+`다른 심사자` 실행한 모델이 아닌 모델이 버전 붙인 기준표로 채점
+`추적` 모델·도구 호출을 한 기록으로 묶어 실패 지점을 찾음
+`운영 측정` 로컬에서 30% 빨랐던 변경이 운영 GPU에선 1%여서, 성능은 운영에서 잰다
 
-**에이전트가 낸 변경도 같은 기준을 통과해야**
-**머지합니다.**
+**에이전트가 낸 결과도, 에이전트가 짠 코드도**
+**같은 기준으로 확인합니다.**
 
 </td>
 </tr>
@@ -62,7 +69,7 @@ requirements → plan → build → review → fix
 
 ### Stack
 
-<img src="https://skillicons.dev/icons?i=java,spring,kotlin,python,typescript,nestjs,mysql,redis,kafka,docker,kubernetes,grafana&theme=dark" />
+<img src="https://skillicons.dev/icons?i=java,spring,python,typescript,nestjs,mysql,redis,docker,kubernetes,grafana&theme=dark" />
 
 </div>
 
